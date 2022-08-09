@@ -10,4 +10,4 @@ jobs:
     vmImage: ${{ parameters.vmImage }}
   steps:
   - script: apt install nodejs
-  - script: node - 
+  - script: node -v
