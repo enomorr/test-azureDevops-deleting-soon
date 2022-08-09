@@ -1,16 +1,19 @@
-parameters: 
-- name: testSet
-  type: jobList
+rigger: none
 
-jobs:
-- ${{ each testJob in parameters.testSet }}:
-  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 200) }}:
-    - job:
-      steps: 
-      - powershell: 'Invoke-RestMethod -Uri https://blogs.msdn.microsoft.com/powershell/feed/ | Format-Table -Property Title, pubDate'
-      - ${{ testJob.steps }}    
-  - ${{ if eq(testJob.templateContext.expectedHTTPResponseCode, 500) }}:
-    - job:
+pool:
+  vmImage: ubuntu-latest
+
+extends:
+  template: testing-template.yml
+  parameters:
+    testSet:
+    - job: positive_test
+      templateContext:
+        expectedHTTPResponseCode: 200
       steps:
-        - powershell: 'Get-ChildItem -Path Env:\'
-        - ${{ testJob.steps }}
+      - script: echo "Run positive test" 
+    - job: negative_test
+      templateContext:
+        expectedHTTPResponseCode: 500
+      steps:
+      - script: echo "Run negative test" 
