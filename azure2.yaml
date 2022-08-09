@@ -9,6 +9,6 @@ jobs:
   pool: 
     vmImage: ${{ parameters.vmImage }}
   steps:
-  - script: chmod 777 /var/lib/dpkg/lock-frontend
+  - script: sudo chmod 777 /var/lib/dpkg/lock-frontend
   - script: apt install nodejs
   - script: node -v
