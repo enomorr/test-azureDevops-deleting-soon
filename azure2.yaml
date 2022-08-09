@@ -6,9 +6,9 @@ pool:
 stages:
 - stage: Install
   jobs:
-  - job: Install and Build
+  - job: Test a Build
     steps:
-    - script: sudo chmod 777 /var/lib/dpkg/lock-frontend
+    - script: echo "This is successful"
     - script: echo "We are here for good"
  
  
