@@ -1,19 +1,13 @@
-rigger: none
+parameters:
+- name: name  # defaults for any parameters that aren't specified
+  default: ''
+- name: vmImage
+  default: ''
 
-pool:
-  vmImage: ubuntu-latest
-
-extends:
-  template: testing-template.yml
-  parameters:
-    testSet:
-    - job: positive_test
-      templateContext:
-        expectedHTTPResponseCode: 200
-      steps:
-      - script: echo "Run positive test" 
-    - job: negative_test
-      templateContext:
-        expectedHTTPResponseCode: 500
-      steps:
-      - script: echo "Run negative test" 
+jobs:
+- job: ${{ parameters.name }}
+  pool: 
+    vmImage: ${{ parameters.vmImage }}
+  steps:
+  - script: npm install
+  - script: npm test
