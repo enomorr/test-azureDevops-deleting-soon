@@ -1,15 +1,14 @@
-parameters:
-- name: name  # defaults for any parameters that aren't specified
-  default: ''
-- name: vmImage
-  default: 'ubuntu-18.04'
+trigger:
+- main
 
-jobs:
-- job: ${{ parameters.name }}
-  pool: 
-    vmImage: ${{ parameters.vmImage }}
-  steps:
-  - script: sudo chmod 777 /var/lib/dpkg/lock-frontend
-  - script: echo "We are here for good"
+pool:
+  vmImage: 'ubuntu-18.04'
+stages:
+- stage: Install
+  jobs:
+  - job: Install and Build
+    steps:
+    - script: sudo chmod 777 /var/lib/dpkg/lock-frontend
+    - script: echo "We are here for good"
  
  
