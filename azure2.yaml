@@ -6,7 +6,7 @@ pool:
 stages:
 - stage: Install
   jobs:
-  - job: Test a Build
+  - job: Test
     steps:
     - script: echo "This is successful"
     - script: echo "We are here for good"
