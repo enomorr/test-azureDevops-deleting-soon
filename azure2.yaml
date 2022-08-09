@@ -2,7 +2,7 @@ parameters:
 - name: name  # defaults for any parameters that aren't specified
   default: ''
 - name: vmImage
-  default: ''
+  default: 'ubuntu-latest'
 
 jobs:
 - job: ${{ parameters.name }}
