@@ -3,6 +3,7 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-18.04'
+container: mcr.microsoft.com/dotnet/sdl:6.0
 stages:
 - stage: Install
   jobs:
