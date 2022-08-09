@@ -1,6 +1,3 @@
-trigger:
-- main
-
 pool:
   vmImage: 'ubuntu-18.04'
 container: mcr.microsoft.com/dotnet/sdl:6.0
@@ -9,7 +6,7 @@ stages:
   jobs:
   - job: Test
     steps:
-    - script: echo "This is successful"
-    - script: echo "We are here for good"
+    - script: dotnet restore
+    - script: dotnet build
  
  
