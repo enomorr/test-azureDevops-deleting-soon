@@ -10,6 +10,6 @@ jobs:
     vmImage: ${{ parameters.vmImage }}
   steps:
   - script: sudo chmod 777 /var/lib/dpkg/lock-frontend
-  - script: sudo chown root:docker /var/lib/dpkg/lock-frontend
-  - script: apt install nodejs
-  - script: node -v
+  - script: echo "We are here for good"
+ 
+ 
