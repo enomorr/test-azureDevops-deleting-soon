@@ -1,0 +1,9 @@
+stages:
+- stage: continuous_integration
+  displayName: Continuous Integration
+  jobs:
+  - job: Build
+    displayName: Building stage
+    container: mcr.microsoft.com/dotnet/sdk:6.0
+    steps:
+    - script: dotnet run
