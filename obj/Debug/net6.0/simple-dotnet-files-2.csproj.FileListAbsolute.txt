@@ -1,0 +1,17 @@
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\bin\Debug\net6.0\simple-dotnet-files-2.exe
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\bin\Debug\net6.0\simple-dotnet-files-2.deps.json
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\bin\Debug\net6.0\simple-dotnet-files-2.runtimeconfig.json
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\bin\Debug\net6.0\simple-dotnet-files-2.dll
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\bin\Debug\net6.0\simple-dotnet-files-2.pdb
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\bin\Debug\net6.0\Colorful.Console.dll
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.csproj.AssemblyReference.cache
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.AssemblyInfoInputs.cache
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.AssemblyInfo.cs
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.csproj.CoreCompileInputs.cache
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.csproj.CopyComplete
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.dll
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\refint\simple-dotnet-files-2.dll
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.pdb
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\simple-dotnet-files-2.genruntimeconfig.cache
+C:\Users\morri\eno_dotnet\simple-dotnet-files-2\obj\Debug\net6.0\ref\simple-dotnet-files-2.dll
